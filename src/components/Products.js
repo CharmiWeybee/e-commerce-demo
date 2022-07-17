@@ -23,7 +23,22 @@ axios(config)
       return (
         <div><ul>
             {
-             products.map(product=><li key={product.id}>{product.name}</li>)
+              products.map(items =>
+                  <div className="card d-flex" key={items.id}>
+                      <img className="card-img-top" src={items.base_image.small_image_url} alt="Card cap"></img>
+                      <div className="card-body">
+                          <div className='card-details' id="details">
+                            <p className='card-name'>{items.name}</p>  
+                            <p className='card-name'>{items.sku}</p>  
+                            {items.description}  
+                            <p className="card-price">₹{items.price}</p>
+                          </div>
+                        </div>
+                      <div className= "card-footer">
+                        {/* <button className='add-to-card-btn btn btn-dark' id="add-to-cart" onClick={() => onAdd(items)}>+ Add To Cart</button> */}
+                    </div>
+                  </div>
+              )
             }
         </ul></div>
       )

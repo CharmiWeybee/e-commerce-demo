@@ -10,10 +10,11 @@ import {Routes,Route} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      {/* <Products></Products> */}
+      <Products></Products>
       <Routes>
         <Route path="/Registration" element={<Registration />}></Route> 
         <Route path="/Login" element={<Login />} ></Route>         
+        {/* <Route path="/Products" element={<Products />} ></Route>          */}
       </Routes>
       {/* <Registration></Registration> */}
       {/* <Login></Login> */}
