@@ -46,7 +46,7 @@ function Login() {
         <div>
             <div className='main-card mt-5 ml-10'>
             <h2>Login Form</h2>
-                <form id="login-form">
+                
                     <div className='card-body'>
                         <div className="form-group row mt-2">
                             <label  className="col-sm-2 col-form-label">Email</label>
@@ -68,7 +68,7 @@ function Login() {
                             <p className='mt-3'>Don't have an account? Register here</p>
                     </div>
                     
-                </form>
+               
             </div>
         </div>
     </>
