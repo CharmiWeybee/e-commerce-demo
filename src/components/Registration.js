@@ -46,7 +46,7 @@ function Registration() {
     <>
            <div className='main-card mt-5 ml-10'>
             <h2>Registration Form</h2>
-                <form id="login-form">
+                
                     <div className='card-body'>
                         <div className="form-group row mt-2">
                             <label  className="col-sm-2 col-form-label">First Name</label>
@@ -90,7 +90,7 @@ function Registration() {
                             <button className='btn btn-dark' onClick={handleSubmit}>Register</button>
                     </div>
                     
-                </form>
+                
             </div>
 
     </>
